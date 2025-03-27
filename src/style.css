@@ -25,3 +25,7 @@ header  svg {
     /* z-index: -2; */
     /* margin-top: -8vh; */
   }
+
+  .item-card{
+    background-color: #242424 !important;
+  }

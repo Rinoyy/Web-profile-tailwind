@@ -1,0 +1,27 @@
+header  svg {
+    /* position: absolute; */
+    filter: blur(20px) !important;
+    /* z-index: -9 !important; */
+    opacity: 18%;
+    /* width: 40%; */
+    /* z-index: -2; */
+    /* margin-top: -8vh; */
+  }
+.about  svg {
+    /* position: absolute; */
+    filter: blur(20px) !important;
+    /* z-index: -9 !important; */
+    opacity: 18%;
+    /* width: 30%; */
+    /* z-index: -2; */
+    /* margin-top: -8vh; */
+  }
+.skils  svg {
+    /* position: absolute; */
+    filter: blur(20px) !important;
+    /* z-index: -9 !important; */
+    opacity: 18%;
+    /* width: 30%; */
+    /* z-index: -2; */
+    /* margin-top: -8vh; */
+  }

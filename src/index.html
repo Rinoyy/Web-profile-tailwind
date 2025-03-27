@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    s
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body style="background-color: #1a1a1a" >
+    <nav>
+      <div class="flex justify-between flex-wrap relative items-center text-white py-5 max-w-7xl mx-auto px-5">
+        <div class="logo">
+          <p class="text-xl font-semibold">RINOS</p>
+        </div>
+        <div class="md:hidden" id="toggle">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </div>
+        <div class="modal flex items-center flex-col md:flex-row text-black top-full w-[90vw] @sm:h-[100vh] md:w-auto md:h-auto md:text-white absolute md:static nav-link hidden md:block">
+        <ul class="flex bg-white md:bg-transparent items-start flex-col md:flex-row gap-3">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SKILS</li>
+            <li>PROJECTS</li>
+            <li>BLOG</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative max-w-4xl mx-auto" >
+        <div class="header-body flex justify-center items-center h-[90vh]">
+            <svg class="flex absolute right-0 md:w-[40%]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#EAEAEA"
+                  d="M52.7,-41C64.4,-27.4,67.3,-5.7,62.4,13.6C57.5,32.9,44.8,49.9,27.3,59.4C9.8,68.8,-12.6,70.8,-28,62C-43.3,53.1,-51.5,33.4,-55,13.8C-58.5,-5.8,-57.2,-25.2,-47.2,-38.4C-37.3,-51.5,-18.6,-58.5,0.9,-59.2C20.5,-59.9,41,-54.5,52.7,-41Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            <div class="main-text">
+                <p class="text-3xl md:text-5xl  md:w-150 text-center text-white">Hi, I’m Rino sitanggang frontend web</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <div class="about w-full text-white flex items-center md:h-[80vh]">
+            <svg class="flex absolute md:w-[30%] md:-ml-[10vw]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path 
+                  fill="#EAEAEA"
+                  d="M52.7,-41C64.4,-27.4,67.3,-5.7,62.4,13.6C57.5,32.9,44.8,49.9,27.3,59.4C9.8,68.8,-12.6,70.8,-28,62C-43.3,53.1,-51.5,33.4,-55,13.8C-58.5,-5.8,-57.2,-25.2,-47.2,-38.4C-37.3,-51.5,-18.6,-58.5,0.9,-59.2C20.5,-59.9,41,-54.5,52.7,-41Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            <div class="about-content max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+                <div class="about-desk w-80 md:w-3/6  flex items-center justify-center order-2 md:order-1">
+                    <div class="text w-500  mt-5 md:mt-0">
+                        <p class="text-5xl font-semibold md:text-6xl">Let's get know <br> about me</p>
+                        <p class="mt-3 font-semibold">Hello, thank you for visiting my simple portfolio website. I am a Front-End Web Developer with 2 years of experience, focusing on developing web interfaces using frameworks such as Bootstrap. I also have experience in JavaScript and PHP with the Laravel framework.</p>
+                    </div>
+                </div>
+                <div class="about-deks flex justify-center order-1 md:order-2">
+                    <img class="w-80 md:w-3/4 rounded-lg" src="/asset/img/landing.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- My skils -->
+        <div class="skils w-full text-white flex items-center md:h-[80vh] relative">
+            <svg class="absolute md:w-[30%] md:-ml-[10vw]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path 
+                  fill="#EAEAEA"
+                  d="M52.7,-41C64.4,-27.4,67.3,-5.7,62.4,13.6C57.5,32.9,44.8,49.9,27.3,59.4C9.8,68.8,-12.6,70.8,-28,62C-43.3,53.1,-51.5,33.4,-55,13.8C-58.5,-5.8,-57.2,-25.2,-47.2,-38.4C-37.3,-51.5,-18.6,-58.5,0.9,-59.2C20.5,-59.9,41,-54.5,52.7,-41Z"
+                  transform="translate(100 100)"
+                />
+            </svg>
+        
+            <div class="skils-content max-w-7xl mx-auto w-full p-6">
+                <div class="title w-full text-left ">
+                    <p class="text-2xl font-bold">My skils</p>
+                </div>
+                <div class="skils-card">
+                    <div class="grid md:grid-flow-col  md:grid-col-3 gap-3">
+                        <div class="bg-green-300">1</div>
+                        <div class="bg-green-300">1</div>
+                        <div class="bg-green-300">1</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggle").click(function (e) {
+          e.preventDefault();
+          $(".modal").slideToggle();
+        });
+      });
+    </script>
+  </body>
 </html>

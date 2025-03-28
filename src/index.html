@@ -16,8 +16,8 @@
         <div class="md:hidden" id="toggle">
           <i class="fa-solid fa-bars text-xl"></i>
         </div>
-        <div class="modal flex items-center flex-col md:flex-row text-black top-full w-[90vw] @sm:h-[100vh] md:w-auto md:h-auto md:text-white absolute md:static nav-link hidden md:block">
-          <ul class="flex bg-white md:bg-transparent items-start flex-col md:flex-row gap-3">
+        <div class="modal flex items-center flex-col md:flex-row text-black top-full w-[90vw] @sm:h-[200%] md:w-auto md:h-auto md:text-white absolute md:static nav-link hidden md:block">
+          <ul class="flex p-5 text-lg font-semibold bg-white md:bg-transparent items-start flex-col md:flex-row gap-3">
             <li>HOME</li>
             <li>ABOUT</li>
             <li>SKILS</li>
@@ -241,11 +241,11 @@
 
           <div class="flex flex-col justify-between text text-center h-[25vh]">
             <div class="title">
-                <p class="text-lg font-medium" style="color: #ff9142">Get in Touch With Us</p>
-                <p class="text-2xl font-semibold text-white">rinositanggang6@gmail.com</p>
+                <p class="text-md md:text-lg font-medium" style="color: #ff9142">Get in Touch With Us</p>
+                <p class="text-lg md:text-2xl font-semibold text-white">rinositanggang6@gmail.com</p>
             </div>
-            <div class="sosial-media  flex flex-row justify-between">
-                <p class="text-3xl font-semibold text-white">Rinos</p>
+            <div class="sosial-media p-5 flex flex-row justify-between">
+                <p class="text-2xl md:text-3xl font-semibold text-white">Rinos</p>
                 <div class="flex flex-row gap-5">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="" width="40px" />
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="" width="40px" />
@@ -266,10 +266,19 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function () {
+
+        let modal = $(".modal");
         $("#toggle").click(function (e) {
           e.preventDefault();
           $(".modal").slideToggle();
         });
+
+        $(document).scroll(function () { 
+          $(".modal").hide();
+        });
+
+      
+
       });
     </script>
   </body>
